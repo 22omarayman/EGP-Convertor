@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baladna</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EGP Convertor</h1>
+        <div class="inputContainer">
+            <img class="png" src="images/eg-flag.jpg" alt="EGP Flag">
+            <form id="myForm" method="post">
+                <input type="number" id="egp" name="egpFlag" placeholder="Enter Amount in EGP">
+                <input id="convert" type="submit" value="Convert" formaction="/convert">
+            </form>
+        </div>
+        <div class="convertResult">
+            <div>
+                <img src="images/usd-flag.svg" alt="USD Flag">
+                <span class="amount"><%= Amount1 %> <span class="currency">USD</span></span>
+            </div>
+            <div>
+                <img class="png" src="images/eur-flag.png" alt="EUR Flag">
+                <span class="amount"><%= Amount2 %> <span class="currency">EUR</span></span>
+            </div>
+            <div>
+                <img src="images/gbp-flag.svg" alt="GBP Flag">
+                <span class="amount"><%= Amount3 %> <span class="currency">GBP</span></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
